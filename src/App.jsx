@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './App.css'
 import BMICalculator from './components/Calculator.jsx'
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,11 @@ function App() {
     };
   }, []);
 
-  return <BMICalculator />;
+  return (
+    <Router basename="/your-repo-name">
+      <BMICalculator />
+    </Router>
+  );
 }
 
 export default App
