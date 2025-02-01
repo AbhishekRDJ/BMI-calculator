@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/your-repo-name">
+    <Router basename="/">
       <BMICalculator />
     </Router>
   );
